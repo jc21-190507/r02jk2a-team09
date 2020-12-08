@@ -2,7 +2,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class Kadai07Test extends Kadai06 {
+class Kadai06Test extends Kadai06 {
 
 	@Test
 	void get2ndMax() {

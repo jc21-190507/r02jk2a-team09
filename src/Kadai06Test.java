@@ -14,10 +14,6 @@ class Kadai06Test extends Kadai06 {
 		int b[] = {3,56,21,8,63,13,88,42,99,35};
 		assertEquals(88 , k6.get2ndMax(b));
 
-
-
-
-
 	}
 
 }

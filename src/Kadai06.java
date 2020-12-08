@@ -1,4 +1,3 @@
-
 public class Kadai06 {
 
 	/**
@@ -8,7 +7,33 @@ public class Kadai06 {
 	 * @return 配列の中の降順で2番目の値
 	 */
 	int get2ndMax(int[] d) {
-		
-		return -1;
+
+		int flag = 0;
+		int loopend =1;
+
+			while(flag == 0) {
+
+				for(int i=0 ; i<d.length-loopend; i++) {
+
+					if(d[i] < d[i+1]){
+
+					int tmp = d[i];
+					d[i] = d[i+1];
+					d[i+1] = tmp;
+
+					flag = 1;
+					}
+				}
+				if(flag == 1) {
+				flag = 0;
+				}
+				else {
+				flag =1;
+				break;
+			}
+			loopend++;
+
+		}
+		return d[1];
 	}
 }
